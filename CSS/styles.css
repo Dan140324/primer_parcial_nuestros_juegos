@@ -6,6 +6,19 @@ body{
     
 }
 
+.mensaje-movil {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mensaje-escritorio {
+        display: none;
+    }
+    .mensaje-movil {
+        display: block;
+    }
+}
+
 header{
     background-color: rgb(46, 46, 94);
     color: white;
