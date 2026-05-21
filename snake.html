@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Snake</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="snake.html">Snake</a>
+        <a href="tres-en-raya.html">Tres en Raya</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="juego">
+        <!-- Marcador de puntajes -->
+        <div class="marcador">
+          <p>Puntaje: <span id="puntaje">0</span></p>
+        </div>
+
+        <!-- Tablero en lienzo para mostrar el juego -->
+        <canvas id="tablero" width="400" height="400"></canvas>
+        <button id="btn_inicio">Iniciar Juego</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        En computadora usa las flechas del teclado. En celular desliza el dedo
+        sobre el tablero.
+      </p>
+    </footer>
+    <script src="JS/snake.js"></script>
+  </body>
+</html>
