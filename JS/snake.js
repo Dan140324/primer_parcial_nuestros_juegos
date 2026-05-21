@@ -72,8 +72,20 @@ function colocarManzana() {
   const columnas = canvas.width / tamanoCuadro;
   const filas = canvas.height / tamanoCuadro;
 
-  manzana.x = Math.floor(Math.random() * columnas) * tamanoCuadro;
-  manzana.y = Math.floor(Math.random() * filas) * tamanoCuadro;
+  let posicionValida = false;
+
+  while (!posicionValida) {
+    manzana.x = Math.floor(Math.random() * columnas) * tamanoCuadro;
+    manzana.y = Math.floor(Math.random() * filas) * tamanoCuadro;
+
+    posicionValida = true;
+
+    for (let i = 0; i < culebra.length; i++) {
+      if (manzana.x === culebra[i].x && manzana.y === culebra[i].y) {
+        posicionValida = false;
+      }
+    }
+  }
 }
 
 function dibujarManzana() {
