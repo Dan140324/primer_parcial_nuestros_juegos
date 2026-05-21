@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="CSS/stylesTresEnRaya.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <header>
+      <h1>Tres en Raya</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="snake.html">Snake</a>
+        <a href="tresEnRaya.html">Tres en Raya</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Estado del juego -->
+      <div id="status">Turno de X</div>
+
+      <!-- Tablero -->
+      <div id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+
+      <!-- Botón reinicio -->
+      <button id="reset">Jugar de nuevo</button>
+    </main>
+    <!-- Instrucciones -->
+    <footer>
+      <p>Haz clic en una casilla para marcar tu jugada.</p>
+    </footer>
+
+    <script src="JS/tresEnRaya.js"></script>
+  </body>
+</html>
