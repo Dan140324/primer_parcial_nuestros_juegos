@@ -52,7 +52,7 @@ function checkWinner() {
 function resetGame() {
   currentPlayer = "X";
   board = ["", "", "", "", "", "", "", "", ""];
-  statusText.textContent = "";
+  statusText.textContent = "Turno de X";
   cells.forEach(cell => {
     cell.textContent = "";
     cell.classList.remove("taken");
