@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juegogos</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Juegogos</h1>
+      <!-- Navegación entre Juegos -->
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Snake</a>
+        <a href="#">Tres en Raya</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Bienvenida -->
+      <section id="bienvenida" class="bienvenida">
+        <h2>¡Bienvenido a Juegogos!</h2>
+        <p>Elige un juego y diviértete. :)</p>
+      </section>
+
+      <section id="juegos" class="juegos">
+        <h2>Nuestros Juegos</h2>
+
+        <div class="tarjetas">
+
+            <!-- Tarjeta para jugar a Snake -->
+          <div class="tarjeta">
+            <h3>Snake</h3>
+            <p>
+              Prueba el clásico juego Snake, come todas las manzanas mientras
+              la serpiente crece, ¡no choques!
+            </p>
+            <a href="#" class="boton">Jugar</a>
+          </div>
+
+            <!-- Tarjeta para jugar a Tres en Raya -->
+          <div class="tarjeta">
+            <h3>Tres en Raya</h3>
+            <p>
+              El siempre confiable Tres en Raya. Consigue tres líneas antes que tu rival.
+            </p>
+            <a href="#" class="boton">Jugar</a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Formulario -->
+    <section class="contacto">
+        <h2>¡Contáctanos y coméntanos qué otros juegos te gustaría ver aquí!</h2>
+        <form id="formulario_contacto">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensaje_exito"></p>
+
+    </section>
+
+    <footer>
+        <p>Juegogos - Proyecto DAW 6-7</p>
+    </footer>
+  </body>
+</html>
